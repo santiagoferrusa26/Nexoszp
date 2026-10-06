@@ -9,6 +9,10 @@
 
 body {
     background-color: black;
+    background-image: url("imagenes/brick-wall-texture.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: white;
 }
 
@@ -19,7 +23,6 @@ body {
 }
 
 @media (max-width: 576px) {
-
     .imagen-zapa {
         width: 100%;
         height: 180px;
@@ -27,26 +30,31 @@ body {
         margin-bottom: 15px;
         margin-right: 0 !important;
     }
-
 }
+
 .card-img-top {
     width: 100%;
     height: 250px;
     object-fit: contain;
-    padding: 15px;
 }
+
 .card {
     height: 100%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-body {
     min-height: 180px;
 }
-body {
-    background-color: black;
-    color: white;
-    background-image: url("imagenes/brick-wall-texture.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
